@@ -1,28 +1,27 @@
-// set the default shell
-// default_shell "/usr/local/bin/fish"
+// custom settings
 
-// set theme
+// default_shell "/usr/local/bin/fish"
+// scrollback_editor "/usr/bin/vim"
+
 theme "tokyo-night"
 
-// change layout to hide navigation hints
 // default_layout "compact"
+// simplified_ui true
+// auto_layout true
+// styled_underlines true
 
-// enable proper mouse cursor selection
-// mouse_mode false
-
-// copy_command "pbcopy"
-
-
-// do not save sessions
 on_force_close "quit"
-
-// disable session serialization (and thus also resurrection)
 session_serialization false
 
-// modify the defualt pane seetings
+// mouse_mode false
+// copy_command "pbcopy"
+// copy_on_select false 
+
 ui {
     pane_frames {
         rounded_corners true;
         hide_session_name true
     }
 }
+
+// end of custom settings
