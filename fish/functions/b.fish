@@ -1,4 +1,4 @@
-function b --wraps='bat --theme tokyonight_night' --description 'alias b=bat --theme tokyonight_night'
-  bat --theme tokyonight_night $argv
-        
+function b --wraps='bat' --description 'alias b=bat'
+    bat $argv
+
 end
