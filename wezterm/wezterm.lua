@@ -24,7 +24,7 @@ config.automatically_reload_config = true
 config.color_scheme = "Tokyo Night"
 
 -- Set the font
-config.font = wezterm.font("MesloLGS Nerd Font Mono")
+config.font = wezterm.font("MesloLGSDZ Nerd Font Mono")
 config.font_size = 16
 
 -- Remove tabs
