@@ -7,8 +7,8 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- Spawn a fish shell in login mode with or without zellij
-config.default_prog = { "/usr/local/bin/fish", "-l" }
--- config.default_prog = { "/usr/local/bin/fish", "-l", "-c", "zellij" }
+-- config.default_prog = { "/usr/local/bin/fish", "-l" }
+config.default_prog = { "/usr/local/bin/fish", "-l", "-c", "zellij" }
 
 -- set some environment variables
 config.set_environment_variables = {

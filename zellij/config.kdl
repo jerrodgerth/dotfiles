@@ -5,7 +5,7 @@
 
 theme "tokyo-night"
 
-// default_layout "compact"
+default_layout "compact"
 // simplified_ui true
 // auto_layout true
 // styled_underlines true
