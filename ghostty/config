@@ -1,0 +1,13 @@
+window-height = 45
+window-width = 160
+
+window-save-state = always
+
+command = fish
+shell-integration = fish
+
+theme = tokyonight
+font-family = "CaskaydiaMono Nerd Font Mono"
+font-size = 35
+
+copy-on-select = true

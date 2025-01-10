@@ -7,14 +7,13 @@ theme "tokyo-night"
 
 default_layout "compact"
 // simplified_ui true
-// auto_layout true
-// styled_underlines true
 
 on_force_close "quit"
 session_serialization false
 
-// mouse_mode false
 copy_command "pbcopy"
+
+// mouse_mode false
 // copy_on_select false 
 
 ui {

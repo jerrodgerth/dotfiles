@@ -24,11 +24,14 @@ config.automatically_reload_config = true
 config.color_scheme = "Tokyo Night"
 
 -- Set the font
-config.font = wezterm.font("MesloLGSDZ Nerd Font Mono")
-config.font_size = 16
+-- config.font = wezterm.font("MesloLGSDZ Nerd Font Mono")
+-- config.font = wezterm.font("CaskaydiaMono Nerd Font Mono")
+config.font = wezterm.font("Liga SFMono Nerd Font")
+config.font_size = 17
 
--- Remove tabs
+-- Control tabs
 config.enable_tab_bar = false
+-- config.hide_tab_bar_if_only_one_tab = true
 
 -- Set new window size
 config.initial_cols = 155
@@ -44,6 +47,23 @@ config.window_decorations = "RESIZE"
 config.inactive_pane_hsb = {
 	saturation = 0.8,
 	brightness = 0.4,
+}
+
+local act = wezterm.action
+
+-- 36 is the default, but you can choose a different size.
+-- Uses the same font as window_frame.font
+-- config.pane_select_font_size=36,
+
+config.keys = {
+	-- activate pane selection mode with numeric labels
+	{
+		key = "9",
+		mods = "CTRL",
+		action = act.PaneSelect({
+			alphabet = "1234567890",
+		}),
+	},
 }
 
 -- and finally, return the configuration to wezterm
