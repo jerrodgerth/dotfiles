@@ -1,9 +1,10 @@
 // custom settings
 
-// default_shell "/usr/local/bin/fish"
-// scrollback_editor "/usr/bin/vim"
+// default_shell "/usr/local/bin/fish" // not needed.  inherited from wezterm
+// scrollback_editor "/usr/bin/vim" // not needed.  inherited from wezterm
 
 theme "tokyo-night"
+// theme "catppuccin-macchiato"
 
 default_layout "compact"
 // simplified_ui true

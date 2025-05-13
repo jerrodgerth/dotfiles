@@ -2,31 +2,35 @@
 # Use as a reference for installing various utilities.
 #
 
+## Order of operations
+
+
 ## Installed via Homebrew
 
-brew install git ## replace default mac version
-brew install gh
-brew install tree
-brew install gnu-sed
-brew install wget
-brew install 1password-cli
-brew install font-meslo-lg-nerd-font
-brew install font-hack-nerd-font
-brew install lazygit
-brew install lazydocker
-brew install bat
-brew install fzf
-brew install zellij
-brew install wezterm
-brew install koekeishiya/formulae/yabai
-brew install neovim
-brew install grip ## to preview and render Github Markdown
+- bat
+- fzf
+- font-meslo-lg-nerd-font
+- font-hack-nerd-font
+- gh
+- git ## replace default mac version
+- gnu-sed
+- grip
+- lazygit
+- nvim
+- tree
+- wezterm
+- wget
+- zellij
+
+## Single command
+
+brew install bat fzf font-meslo-lg-nerd-font font-hack-nerd-font gh git gnu-sed grip lazygit nvim tree wezterm wget zellij
 
 ## Install Fisher
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
 ## Fish prompt
-fisher install purefish/pure
+fisher install pure-fish/pure
 
 ## Fish theme
 fisher install vitallium/tokyonight-fish
@@ -38,11 +42,3 @@ cd .config/bat/themes/
 curl -O https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/sublime/tokyonight_night.tmTheme
 bat cache --build
 bat --list-themes
-
-## Setup 1password-cli (op)
-
-## Fish aliases
-alias --save myip="scutil --nwi"
-alias --save b="bat --theme tokyonight_night"
-alias --save n="nvim"
-alias --save zj="zellij options --theme tokyo-night"

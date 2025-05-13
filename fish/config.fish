@@ -36,3 +36,10 @@ abbr -a -- d docker
 abbr -a -- lzd lazydocker
 abbr -a -- lzg lazygit
 abbr -a -- n nvim
+abbr -a -- lm limactl
+
+abbr -a -- ol ollama
+abbr -a -- oll 'ollama list'
+abbr -a -- olp 'ollama ps'
+
+abbr -a -- lma limactl
